@@ -1,0 +1,8 @@
+---
+
+- name: Create mount point /mnt/cdrom
+  file: path=/mnt/cd state=directory
+
+- name: Mount GosLinux DVD (/dev/cdrom) - must attach it first
+  mount: src=/dev/cdrom fstype=iso9660 name=/mnt/cd state=mounted
+  

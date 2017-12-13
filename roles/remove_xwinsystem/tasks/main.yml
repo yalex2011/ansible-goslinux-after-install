@@ -1,0 +1,6 @@
+---
+
+- name: Remove the X11 environment group
+  yum:
+    name: libX11
+    state: absent

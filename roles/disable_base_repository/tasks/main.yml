@@ -1,0 +1,11 @@
+---
+# Only CentOS 7
+- name: disable base repository
+  shell:
+    yum-config-manager --disable base
+    yum-config-manager --disable extras
+    yum-config-manager --disable updates
+  # yum: disablerepo=* state=present
+  # yum_repository:
+  #   name: base
+  #   enabled: no

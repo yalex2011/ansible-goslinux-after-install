@@ -1,0 +1,16 @@
+---
+
+- name: After install GosLinux
+  hosts: all
+  become: yes
+  roles:
+    - disable_base_repository
+    - add_cdrom_repository
+    #- yum_update
+    #- disable_selinux
+    - disable_ipv6
+    - remove_xwinsystem
+    #- chenge_hostname
+    #- install_libs
+    #- cp_files
+    #- install_postgresql
