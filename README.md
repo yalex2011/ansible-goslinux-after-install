@@ -1,0 +1,1 @@
+# ansible-goslinux-after-install
